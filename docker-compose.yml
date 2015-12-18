@@ -29,7 +29,7 @@ firefoxdebug:
   ports:
     - 5901:5900
 protractor:
-  image: blueimp/protractor:2.5
+  image: blueimp/protractor:3.0
   links:
     - hub
   volumes:

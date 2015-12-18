@@ -16,7 +16,7 @@ RUN apk add --update \
   # Install protractor:
   # node-gyp dependency build requires --unsafe-perm option for global install
   && npm install -g --unsafe-perm \
-    protractor@'<2.6' \
+    protractor@'<3.1' \
   # Remove packages which are no longer needed:
   && apk del --purge \
     python \
