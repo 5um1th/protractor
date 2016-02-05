@@ -9,7 +9,7 @@ MAINTAINER Sebastian Tschan <mail@blueimp.net>
 USER root
 
 # Install build requirements for protractor:
-RUN apk add --update \
+RUN apk --no-cache add \
   python \
   make \
   g++ \
@@ -27,7 +27,6 @@ RUN apk add --update \
     /tmp/* \
     /root/.npm \
     /root/.node-gyp \
-    /var/cache/apk/* \
     `find / -regex '.*\.py[co]'`
 
 USER node
