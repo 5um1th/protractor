@@ -31,4 +31,4 @@ RUN apk --no-cache add \
 
 USER node
 
-ENTRYPOINT ["protractor"]
+ENTRYPOINT ["tini", "--", "protractor"]
